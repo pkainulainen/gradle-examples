@@ -1,4 +1,4 @@
-This is an example application of my blog post titled Getting Started with Gradle: Dependency Management (Not published yet)
+This is an example application of my blog post titled [Getting Started with Gradle: Dependency Management](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-dependency-management/).
 
 You can package the application by running one of the following commands at command prompt:
 
