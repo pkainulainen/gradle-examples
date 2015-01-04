@@ -1,4 +1,6 @@
-This is an example application of my blog post titled Getting Started with Gradle: Creating a Runnable Binary Distribution (not published)
+This is an example application of my blog post:
+
+* [Getting Started with Gradle: Creating a Runnable Binary Distribution](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-binary-distribution/)
 
 You can package the application by running one of the following commands at command prompt:
 

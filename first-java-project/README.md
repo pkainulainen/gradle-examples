@@ -1,4 +1,6 @@
-This is an example application of my blog post titled [Getting Started with Gradle: Our First Java Project](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-our-first-java-project/).
+This is an example application of my blog post:
+
+* [Getting Started with Gradle: Our First Java Project](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-our-first-java-project/)
 
 You can package the application by running one of the following commands at command prompt:
 
