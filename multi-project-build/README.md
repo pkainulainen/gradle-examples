@@ -1,6 +1,6 @@
 This is an example application of my blog post:
 
-* Getting Started with Gradle: Creating a Multi-Module Project (not published)
+* [Getting Started with Gradle: Creating a Multi-Project Build](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-multi-project-build/)
 
 You can package the application by running one of the following commands at command prompt:
 
