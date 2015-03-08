@@ -1,6 +1,6 @@
 This is an example application of my blog post:
 
-* [Getting Started with Gradle: Creating a Web Application Project]()
+* [Getting Started with Gradle: Creating a Web Application Project](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-web-application-project/)
 
 You can run the application by running the following command at command prompt:
 
