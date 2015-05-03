@@ -1,6 +1,6 @@
 This is an example application of my blog post:
 
-* [Getting Started with Gradle: Integration Testing]()
+* [Getting Started with Gradle: Integration Testing](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-integration-testing/)
 
 You can run unit tests by running the following command at the command prompt:
 
