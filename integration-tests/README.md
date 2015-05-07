@@ -4,16 +4,19 @@ This is an example application of my blog post:
 
 You can run unit tests by running the following command at the command prompt:
 
-    gradle test
+    gradle clean test
 
 You can run integration tests by running the following command at the command prompt:
 
-    gradle integrationTest -x test
+    gradle clean integrationTest
 
 You can run all tests by running the following command at the command prompt:
 
-    gradle integrationTest
+    gradle clean test integrationTest
+    
+You can run the full build (that runs all tests) by running the following command at the command prompt:
 
+    gradle clean build
 
 You can package the application by running one of the following commands at the command prompt:
 
