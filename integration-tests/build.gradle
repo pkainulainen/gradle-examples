@@ -37,6 +37,9 @@ dependencies {
 task integrationTest(type: Test) {
     testClassesDir = sourceSets.integrationTest.output.classesDir
     classpath = sourceSets.integrationTest.runtimeClasspath
+    //If you want to ensure that integration tests are run every time when you invoke
+    //this task, uncomment the following line.ss
+    //outputs.upToDateWhen { false }
 }
 
 //Ensure that the check task fails the build if there are failing integration tests.
