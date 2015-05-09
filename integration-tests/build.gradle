@@ -38,7 +38,7 @@ task integrationTest(type: Test) {
     testClassesDir = sourceSets.integrationTest.output.classesDir
     classpath = sourceSets.integrationTest.runtimeClasspath
     //If you want to ensure that integration tests are run every time when you invoke
-    //this task, uncomment the following line.ss
+    //this task, uncomment the following line.
     //outputs.upToDateWhen { false }
 }
 
