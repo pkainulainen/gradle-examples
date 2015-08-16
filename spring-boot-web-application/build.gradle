@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath(
+                'org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE',
+                'org.unbroken-dome.gradle-plugins:gradle-testsets-plugin:1.0.2'
+        )
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.unbroken-dome.test-sets'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'net.petrikainulainen.gradle.springboot.SpringBootExampleApplication'
+
+repositories {
+    mavenCentral()
+}
+
+testSets {
+    integrationTest { dirName = 'integration-test' }
+}
+
+dependencies {
+    compile(
+            'org.springframework.boot:spring-boot-starter-actuator',
+            'org.springframework.boot:spring-boot-starter-thymeleaf'
+    )
+    testCompile(
+            'com.nitorcreations:junit-runners:1.2',
+            'org.springframework.boot:spring-boot-starter-test'
+    )
+}
+
+//If you want to ensure that integration tests are run every time when you invoke
+//this task, uncomment the following block.
+project.integrationTest {
+    outputs.upToDateWhen { false }
+}
+
+//Ensure that the check task fails the build if there are failing integration tests.
+check.dependsOn integrationTest
+//Ensure that our unit tests are run before our integration tests
+integrationTest.mustRunAfter test
+
+//Ensure that the HTML reports of unit and integration tests are written to different directories.
+tasks.withType(Test) {
+    reports.html.destination = file("${reporting.baseDir}/${name}")
+}
+
