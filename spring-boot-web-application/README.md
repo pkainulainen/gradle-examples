@@ -1,8 +1,6 @@
 This is an example application of my blog post:
 
-* [Getting Started with Gradle: Creating a Spring Boot Web Application Project]()
-
-You might also want to 
+* [Getting Started with Gradle: Creating a Spring Boot Web Application Project](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-spring-boot-web-application-project/)
 
 You can run unit tests by running the following command at the command prompt:
 
