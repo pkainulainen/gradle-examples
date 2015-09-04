@@ -3,3 +3,9 @@
 .idea
 build 
 .DS_Store
+
+# eclipse IDE related dirs/files to omit
+.classpath
+.project
+.settings
+bin
