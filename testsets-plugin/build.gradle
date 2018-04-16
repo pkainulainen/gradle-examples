@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.unbroken-dome.gradle-plugins:gradle-testsets-plugin:1.0.2'
+        classpath 'org.unbroken-dome.gradle-plugins:gradle-testsets-plugin:1.4.5'
     }
 }
 
@@ -35,11 +35,6 @@ dependencies {
 check.dependsOn integrationTest
 //Ensure that our unit tests are run before our integration tests
 integrationTest.mustRunAfter test
-
-//Ensure that the HTML reports of unit and integration tests are written to different directories.
-tasks.withType(Test) {
-    reports.html.destination = file("${reporting.baseDir}/${name}")
-}
 
 mainClassName = 'net.petrikainulainen.gradle.HelloWorld'
 
