@@ -35,7 +35,7 @@ dependencies {
 //Create the task that runs the integration tests found from the
 //configured source directory and uses the correct classpath.
 task integrationTest(type: Test) {
-    testClassesDir = sourceSets.integrationTest.output.classesDir
+    testClassesDirs = sourceSets.integrationTest.output.classesDirs
     classpath = sourceSets.integrationTest.runtimeClasspath
     //If you want to ensure that integration tests are run every time when you invoke
     //this task, uncomment the following line.
@@ -46,11 +46,6 @@ task integrationTest(type: Test) {
 check.dependsOn integrationTest
 //Ensure that our unit tests are run before our integration tests
 integrationTest.mustRunAfter test
-
-//Ensure that the HTML reports of unit and integration tests are written to different directories.
-tasks.withType(Test) {
-    reports.html.destination = file("${reporting.baseDir}/${name}")
-}
 
 mainClassName = 'net.petrikainulainen.gradle.HelloWorld'
 
